@@ -1,0 +1,34 @@
+// @import "bootstrap/scss/bootstrap";
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+.wrapper {
+    height: 500px;
+    width: 1000px;
+    display: flex;
+    gap: 10px;
+    background-color: grey;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+//odnosi sie do wszystkich potomkow z klasa. block-article
+//.wrapper.block-article{}
+
+.wrapper>.block-article {
+    //odnosi sie do bezposrednich potomkow w bloku .wrapper o klasie .block-article
+    width: 200px;
+    background-color: red;
+    flex-grow: 1;
+}
+
+.wrapper>.block-article:first-child {
+    flex-basis: 20px;
+}
+
+.wrapper>.block-article:nth-child(4n) {
+    flex-grow: 4;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "zdfronpol32",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel *.html",
+    "build": "parcel build *.html --public-url /FRONpol32/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2",
+    "parcel": "^2.11.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  }
+}
